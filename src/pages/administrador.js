@@ -3,7 +3,7 @@ import React from 'react'
 function administrador() {
     return (
         <div>
-            Página administrador
+            Página administrador (Privada)
         </div>
     )
 }
