@@ -1,5 +1,6 @@
 import React from 'react'
 import { Button, Col, Form, Row } from 'react-bootstrap'
+import { NavLink } from 'react-router-dom'
 import { Administrador } from '../pages/Administrador'
 
 function EditarForm() {
@@ -65,12 +66,12 @@ function EditarForm() {
                 </Col>
                 <Row className="mb-3 justify-content-center">
                     <Col xs="auto">
-                        <Button variant="danger" type="submit" onClick={Administrador}>
+                        <Button variant="danger" type="submit" as={NavLink} to={'/administrador'}>
                         Cancelar
                         </Button> 
                     </Col>
                     <Col xs="auto">
-                        <Button  variant="primary" type="submit">
+                        <Button  variant="primary" type="submit" as={NavLink} to={'/administrador'}>
                         Guardar cambios
                         </Button> 
                     </Col>

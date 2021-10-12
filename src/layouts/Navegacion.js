@@ -4,7 +4,7 @@ import {NavLink} from 'react-router-dom'
 
 function Navegacion() {
     return (
-        <Navbar bg="dark" variant="dark" expand="lg">
+        <Navbar bg="dark" variant="dark" expand="lg" className="align-items-end">
                 <Container>
                     <Navbar.Brand as={NavLink} to={'/'}>Linguaskill  Cambridge</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
