@@ -1,6 +1,7 @@
 import React from 'react'
 import { Button, Form } from 'react-bootstrap'
 
+
 function LoginForm() {
     return (
         <Form>
@@ -24,9 +25,9 @@ function LoginForm() {
                 </Form.Control.Feedback>
             </Form.Group>
             
-            <Button className="mb-3" variant="primary" type="submit">
+            <Button className="mb-3 mx-auto d-block" variant="primary" type="submit">
                 Iniciar sesión
-            </Button>
+            </Button>     
         </Form>
     )
 }
