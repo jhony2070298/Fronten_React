@@ -1,6 +1,6 @@
 import React from 'react'
 
-function administrador() {
+function Administrador() {
     return (
         <div>
             Página administrador (Privada)
@@ -8,4 +8,4 @@ function administrador() {
     )
 }
 
-export {administrador}
+export {Administrador}

@@ -1,6 +1,6 @@
 import React from 'react'
 
-function register() {
+function Register() {
     return (
         <div>
             Página de registro
@@ -8,4 +8,4 @@ function register() {
     )
 }
 
-export {register}
+export {Register}

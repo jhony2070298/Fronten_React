@@ -1,6 +1,6 @@
 import React from 'react'
 
-function editar() {
+function Editar() {
     return (
         <div>
             Página editar (Privada)
@@ -8,4 +8,4 @@ function editar() {
     )
 }
 
-export {editar}
+export {Editar}

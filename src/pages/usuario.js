@@ -1,6 +1,6 @@
 import React from 'react'
 
-function usuario() {
+function Usuario() {
     return (
         <div>
             Página Usuario
@@ -8,4 +8,4 @@ function usuario() {
     )
 }
 
-export {usuario}
+export {Usuario}

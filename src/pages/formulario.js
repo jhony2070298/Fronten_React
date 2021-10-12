@@ -1,6 +1,6 @@
 import React from 'react'
 
-function formulario() {
+function Formulario() {
     return (
         <div>
             Página formulario
@@ -8,4 +8,4 @@ function formulario() {
     )
 }
 
-export {formulario}
+export {Formulario}
