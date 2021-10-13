@@ -7,7 +7,7 @@ function Editar() {
         <Container className="mt-5">
         <Row>
             <Col>
-            <h3 className="text-center">Editar</h3>
+            <h3>Editar</h3>
                 <Card body>
                     <div>
                     <EditarForm/> 

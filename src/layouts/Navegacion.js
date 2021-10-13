@@ -8,10 +8,7 @@ function Navegacion() {
                 <Container>
                     <Navbar.Brand as={NavLink} to={'/'}>Linguaskill  Cambridge</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                    <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="me-auto">
-                        <Nav.Link as={NavLink} to={'/formulario'}>Formulario</Nav.Link>
-                        </Nav>
+                    <Navbar.Collapse className="justify-content-end" id="basic-navbar-nav">
                         <Nav>
                             <React.Fragment>
                                 <Nav.Link as={NavLink} to={'/registro'}>Registrarse</Nav.Link>
