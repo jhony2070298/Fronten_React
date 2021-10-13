@@ -9,6 +9,7 @@ import { Formulario } from '../pages/Formulario';
 import { Usuario } from '../pages/Usuario';
 import { Administrador } from '../pages/Administrador';
 import { Editar } from '../pages/Editar';
+import { Inicio } from '../pages/Inicio';
 import Logo from '../img/logo_ih.jpg'
 
 
@@ -27,6 +28,7 @@ function App() {
               <Route exact path="/usuario" component={Usuario}></Route>
               <Route exact path="/administrador" component={Administrador}></Route>
               <Route exact path="/editar" component={Editar}></Route>
+              <Route exact path="/inicio" component={Inicio}></Route>
             </Switch>
           </Container>
       </BrowserRouter>

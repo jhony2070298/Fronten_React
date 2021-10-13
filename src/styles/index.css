@@ -1,1 +1,45 @@
+.logo-principal{
+    margin: 10px;
+}
 
+.linguaskill{
+    position: absolute;
+    left: 73%;
+}
+
+.mi-informacion{
+    text-align: right;
+    margin: 10px;
+}
+
+.titulo-index{
+    text-align: center;
+}
+
+.mi-button{
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px;
+}
+
+.lst-informacion{
+    position: relative;
+    top: 50px;
+    left: 25px;
+    font-size: 20px;
+}
+
+.mi-lista{
+    list-style-type: circle;
+}
+
+.mi-lista li {
+    padding: 5px;
+}
+
+.img-cambridge{
+    position: relative;
+    top: 85px;
+    left: 50px;
+}
