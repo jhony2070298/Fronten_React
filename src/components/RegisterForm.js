@@ -45,10 +45,10 @@ function RegisterForm() {
             </Form.Group>
            
            <div className="mt-3 text-center">
-                <Button type="submit" variant="danger"  className="mb-3 mx-auto ">
+                <Button type="submit" variant="danger"  className="mx-2">
                     Regresar
                 </Button>
-                <Button type="submit" variant="primary"  className="mb-3 mx-auto ">
+                <Button type="submit" variant="primary"  className="mx-2">
                     Crear usuario
                 </Button>    
             </div>
