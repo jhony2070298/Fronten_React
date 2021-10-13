@@ -9,11 +9,8 @@ import { Formulario } from '../pages/Formulario';
 import { Usuario } from '../pages/Usuario';
 import { Administrador } from '../pages/Administrador';
 import { Editar } from '../pages/Editar';
-<<<<<<< HEAD
 import { Inicio } from '../pages/Inicio';
-=======
 import Logo from '../img/logo_ih.jpg'
->>>>>>> 019904670989336a62ee77ecd961b12cce03024b
 
 
 function App() {
