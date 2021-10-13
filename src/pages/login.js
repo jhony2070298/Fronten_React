@@ -12,7 +12,7 @@ function Login() {
                 <Col sm="12" md={{span:8,offset:2}} lg={{span:6, offset:3}}>
                     <Card body>
                         <h3 className="text-center">Iniciar sesión</h3>
-                        <div class="mt-3 mi-imagen-usuario">
+                        <div className="mt-3 mi-imagen-usuario">
                             <Image className="mx-auto d-block" src={ImgUser} fluid/>
                         </div>
                         <div>
