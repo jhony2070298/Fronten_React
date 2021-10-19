@@ -10,26 +10,28 @@ import { Usuario } from '../pages/Usuario';
 import { Administrador } from '../pages/Administrador';
 import { Editar } from '../pages/Editar';
 import { Inicio } from '../pages/Inicio';
-import Logo from '../img/logo_ih.jpg'
 import LogoIH from '../img/logo_ih.jpg'
 import linguaskill from '../img/Linguaskill_from_480.jpeg'
+import { Provider } from 'react-redux';
+import {store} from '../store';
+import {comprobarToken} from '../connection/helpers/comprobarToken'
+
+comprobarToken()
 
 
 function App() {
   return (
+    <Provider store={store}>
       <BrowserRouter>
           <div>
             <Navegacion/> 
           </div>
           <div className="mt-3 mi-imagenes">
                     <Image src={LogoIH} alt="Logo International House Bogotá" width="225" height="80" fluid/>
-                    <span class="linguaskill">
+                    <span className="linguaskill">
                     <Image src={linguaskill} alt="Logo Linguaskill" width="225" height="70" fluid/>
                     </span>
           </div>
-          {/* <div>
-          <Image className="mx-auto" src={Logo} fluid/>
-          </div> */}
           <Container>
             <Switch>
               <Route exact path="/registro" component={Register}></Route>
@@ -42,6 +44,7 @@ function App() {
             </Switch>
           </Container>
       </BrowserRouter>
+    </Provider>
   );
 }
 
