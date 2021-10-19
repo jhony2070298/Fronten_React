@@ -2,7 +2,7 @@ import React from 'react'
 import { Card, Col, Container, Row } from 'react-bootstrap'
 import { AdminForm } from '../components/AdminForm'
 
-function AdminF() {
+function Administrador() {
     return (
         <Container className="mt-4">
             <Row>
@@ -19,4 +19,4 @@ function AdminF() {
     )
 }
 
-export {AdminF}
+export {Administrador}

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Button, Col, Form, Row } from 'react-bootstrap'
 import { NavLink } from 'react-router-dom'
-import { Administrador } from '../pages/administrador'
+
 
 function EditarForm() {
     return (
