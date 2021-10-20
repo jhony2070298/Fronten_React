@@ -18,33 +18,45 @@ function AdminForm() {
             <tbody>
                 <tr>
                     <td>1</td>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>1</td>
-                    <td>Mark</td>
-                    <td>Otto</td>
+                    <td>322345</td>
+                    <td>Julietha</td>
+                    <td>Gomez</td>
+                    <td>Medellin</td>
+                    <td>14 Jun 2021</td>
+                    <td>Aprobado</td>
                     <td>
-                        <Button variant="primary">Editar</Button>{' '}
-                        <Button variant="danger">Eliminar</Button> <Button variant="info">Info</Button>{' '}
+                        <Button variant="primary" className="m-2">Editar</Button>
+                        <Button variant="danger" className="m-2">Eliminar</Button> 
+                        <Button variant="info" className="m-2">Info</Button>
                     </td>
                 </tr>
                 <tr>
                     <td>2</td>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                    <Button variant="primary">Editar</Button>{' '}
-                    <Button variant="danger">Eliminar</Button> <Button variant="info">Info</Button>{' '}
-  
+                    <td>322345</td>
+                    <td>Julietha</td>
+                    <td>Gomez</td>
+                    <td>Medellin</td>
+                    <td>14 Jun 2021</td>
+                    <td>Aprobado</td>
+                    <td>
+                        <Button variant="primary" className="m-2">Editar</Button>
+                        <Button variant="danger" className="m-2">Eliminar</Button> 
+                        <Button variant="info" className="m-2">Info</Button>
+                    </td>
                 </tr>
                 <tr>
                     <td>3</td>
-                    <td colSpan="2">Larry the Bird</td>
-                    <td>@twitter</td>
-                    <Button variant="primary">Editar</Button>{' '}
-                    <Button variant="danger">Eliminar</Button> <Button variant="info">Info</Button>{' '}
-  
+                    <td>322345</td>
+                    <td>Julietha</td>
+                    <td>Gomez</td>
+                    <td>Medellin</td>
+                    <td>14 Jun 2021</td>
+                    <td>Aprobado</td>
+                    <td>
+                        <Button variant="primary" className="m-2">Editar</Button>
+                        <Button variant="danger" className="m-2">Eliminar</Button> 
+                        <Button variant="info" className="m-2">Info</Button>
+                    </td>
                 </tr>
              </tbody>
         </Table>

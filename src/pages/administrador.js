@@ -8,7 +8,7 @@ function Administrador() {
             <Row>
             <h3>Usuarios Registrados</h3>
             <br/>
-                <Col sm="12" md={{span:8, offset:2}} lg={{span:6, offset:3}} >
+                <Col>
                     <Card body>
                         <AdminForm/>
                     
