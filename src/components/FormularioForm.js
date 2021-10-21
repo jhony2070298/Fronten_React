@@ -1,5 +1,7 @@
 import React from 'react'
-import { Button, Form } from 'react-bootstrap'
+import { Button, Form, Image} from 'react-bootstrap'
+import Subir from '../img/subir_archivos.jpg'
+import prueba from '../img/subir_archivos.jpg'
 
 
 function FormularioForm() {
@@ -69,7 +71,7 @@ function FormularioForm() {
               <div className="col-4 text-center">
                 <div className="row">
                   <div className="col-6"><label htmlFor="archivo_documento" className="txt_lbl">Cargar Documento de Identidad</label></div>
-                  <div className="col-5 box-img py-2" onclick="uploadfile();"><img className="archivo" src="../img/subir_archivos.jpg" />
+                  <div className="col-5 box-img py-2" onclick="uploadfile();"><Image className="mx-auto d-block" src={Subir} fluid/>
                     <div className="txt-file pt-3">Click Aqui Para Caragar Archivos</div>
                   </div>
                   <input type="file" name="archivo_documento" id="archivo_documento" className="d-none" />
@@ -78,7 +80,7 @@ function FormularioForm() {
               <div className="col-4 text-center">
                 <div className="row">
                   <div className="col-5"><label htmlFor="archivo_pago" className="txt_lbl">Cargar Evidencia de Pago</label></div>
-                  <div className="col-5 box-img py-2" onclick="uploadfile2();"><img className="archivo" src="../img/subir_archivos.jpg" />
+                  <div className="col-5 box-img py-2" onclick="uploadfile2();"><Image className="mx-auto d-block" src={Subir} fluid/>
                     <div className="txt-file pt-3">Click Aqui Para Caragar Archivos</div>
                   </div>
                   <input type="file" name="archivo_pago" id="archivo_pago" className="d-none" />
@@ -87,7 +89,8 @@ function FormularioForm() {
               <div className="col-4 text-center">
                 <div className="row">
                   <div className="col-5"><label htmlFor="archivo_foto" className="txt_lbl">Cargar Foto del Candidato</label></div>
-                  <div className="col-5 box-img py-2" onclick="uploadfile3();"><img className="archivo" src="../img/subir_archivos.jpg" />
+                  <div className="col-5 box-img py-2" onclick="uploadfile3();">
+                    <Image className="mx-auto d-block" src={Subir} fluid/>
                     <div className="txt-file pt-3">Click Aqui Para Caragar Archivos</div>
                   </div>
                   <input type="file" name="archivo_foto" id="archivo_foto" className="d-none" />
