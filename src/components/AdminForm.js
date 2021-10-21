@@ -1,5 +1,6 @@
 import React from 'react'
 import { Button, Table } from 'react-bootstrap'
+import { NavLink } from 'react-router-dom'
 function AdminForm() {
     return (
         <Table striped bordered hover>
@@ -25,7 +26,7 @@ function AdminForm() {
                     <td>14 Jun 2021</td>
                     <td>Aprobado</td>
                     <td>
-                        <Button variant="primary" className="m-2">Editar</Button>
+                        <Button variant="primary" className="m-2" as={NavLink} to={'/editar'}>Editar</Button>
                         <Button variant="danger" className="m-2">Eliminar</Button> 
                         <Button variant="info" className="m-2">Info</Button>
                     </td>
@@ -39,7 +40,7 @@ function AdminForm() {
                     <td>14 Jun 2021</td>
                     <td>Aprobado</td>
                     <td>
-                        <Button variant="primary" className="m-2">Editar</Button>
+                        <Button variant="primary" className="m-2" as={NavLink} to={'/editar'}>Editar</Button>
                         <Button variant="danger" className="m-2">Eliminar</Button> 
                         <Button variant="info" className="m-2">Info</Button>
                     </td>
@@ -53,7 +54,7 @@ function AdminForm() {
                     <td>14 Jun 2021</td>
                     <td>Aprobado</td>
                     <td>
-                        <Button variant="primary" className="m-2">Editar</Button>
+                        <Button variant="primary" className="m-2" as={NavLink} to={'/editar'}>Editar</Button>
                         <Button variant="danger" className="m-2">Eliminar</Button> 
                         <Button variant="info" className="m-2">Info</Button>
                     </td>

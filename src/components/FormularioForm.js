@@ -1,5 +1,6 @@
 import React from 'react'
 import { Button, Form, Image} from 'react-bootstrap'
+import { NavLink } from 'react-router-dom';
 import Subir from '../img/subir_archivos.jpg'
 import prueba from '../img/subir_archivos.jpg'
 
@@ -99,8 +100,8 @@ function FormularioForm() {
             </div>
             <div className="row py-5">
               <div className="col text-center">
-                <Button type="button" className="btn btn-primary mr-4" onclick="parent.location.href='../index.html'" target="_parent">Regresar</Button>
-                <Button type="button" className="btn btn-danger " onclick="parent.location.href='./usuario.html'" target="_parent">Enviar</Button>    
+                <Button type="button" className="ml-3" variant="danger" as={NavLink} to={'/'}>Regresar</Button>
+                <Button type="button" className="ml-3" variant="primary">Enviar</Button>    
               </div>
             </div>
           </div>
