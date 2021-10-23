@@ -15,6 +15,7 @@ import linguaskill from '../img/Linguaskill_from_480.jpeg'
 import { Provider } from 'react-redux';
 import {store} from '../store';
 import {comprobarToken} from '../connection/helpers/comprobarToken'
+import { RutaPrivada } from './RutaPrivada';
 
 comprobarToken()
 
@@ -36,11 +37,11 @@ function App() {
             <Switch>
               <Route exact path="/registro" component={Register}></Route>
               <Route exact path="/login" component={Login}></Route>
-              <Route exact path="/formulario" component={Formulario}></Route>
-              <Route exact path="/usuario" component={Usuario}></Route>
-              <Route exact path="/administrador" component={Administrador}></Route>
-              <Route exact path="/editar" component={Editar}></Route>
               <Route exact path="/" component={Inicio}></Route>
+              <RutaPrivada exact path="/formulario" component={Formulario}></RutaPrivada>
+              <RutaPrivada exact path="/usuario" component={Usuario}></RutaPrivada>
+              <RutaPrivada exact path="/administrador" component={Administrador}></RutaPrivada>
+              <RutaPrivada exact path="/editar" component={Editar}></RutaPrivada>
             </Switch>
           </Container>
       </BrowserRouter>

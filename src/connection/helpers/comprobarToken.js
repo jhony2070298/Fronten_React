@@ -6,20 +6,20 @@ import { setAutenticationToken } from './setAutenticationToken'
 const comprobarToken =()=> {
     if(localStorage.jwtToken){
 
-        setAutenticationToken(localStorage.jwtToken)
+        setAutenticationToken(localStorage.jwtToken);
 
-        const decodificado = jwt_decode(localStorage.jwtToken)
+        const decodificado = jwt_decode(localStorage.jwtToken);
 
-        StorageEvent.dispatch(setUsuarioActual({
+        store.dispatch(setUsuarioActual({
             usuario:decodificado,
             conectado:true
         }))
         
-        const tiempoAtual = Math.floor(Date.now()/1000)
+        const tiempoAtual = Math.floor(Date.now()/1000);
 
         if(decodificado.exp < tiempoAtual){
-            store.dispatch(cerrarSesion())
-            window.location.href="/login"
+            store.dispatch(cerrarSesion());
+            window.location.href="/login";
         }
 
     }

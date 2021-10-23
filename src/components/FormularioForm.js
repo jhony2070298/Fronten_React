@@ -1,8 +1,8 @@
 import React from 'react'
-import { Button, Form, Image} from 'react-bootstrap'
+import { Button, Image} from 'react-bootstrap'
 import { NavLink } from 'react-router-dom';
 import Subir from '../img/subir_archivos.jpg'
-import prueba from '../img/subir_archivos.jpg'
+
 
 
 function FormularioForm() {

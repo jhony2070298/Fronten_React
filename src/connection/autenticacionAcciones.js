@@ -1,5 +1,4 @@
 import axios from 'axios'
-import React from 'react'
 import { LOGIN_ENDPOINT } from './helpers/endPoint'
 import jwt_decode from 'jwt-decode'
 import { SET_USUARIO_ACTUAL } from '../reducers/tipos'
@@ -8,25 +7,10 @@ import { setAutenticationToken } from './helpers/setAutenticationToken'
 export const loginUsuario = (datosUsuario) => dispatch => {
 
     // console.log(datosUsuario)
-    
-    // return new Promise( (resolve, reject)=>{
-    //     axios.get(LOGIN_ENDPOINT,{
-    //         params:{username:datosUsuario.userName,password:datosUsuario.password}
-    //     }).then(response =>{
-    //         // console.log(response)
-
-    //         resolve(response)
-
-    //     }).catch(err=>{
-    //         reject(err)
-    //     })
-    // })
 
     return new Promise( (resolve, reject)=>{
-        // axios.post(LOGIN_ENDPOINT,datosUsuario,{
-        //     headers:{'Accept':'application/json','Content-Type':'application/json'}
-        axios.get(LOGIN_ENDPOINT,{
-                    params:{username:datosUsuario.userName,password:datosUsuario.password}
+        axios.post(LOGIN_ENDPOINT,datosUsuario,{
+            headers:{'Accept':'application/json','Content-Type':'application/json'}
         }).then(response =>{
             // console.log(response)
             const {authorization} = response.headers
@@ -62,5 +46,5 @@ export const cerrarSesion = () => dispatch =>{
     dispatch(setUsuarioActual({
         usuario:{},
         conectado:false
-    }))
+    }));
 }
