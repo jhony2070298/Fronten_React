@@ -17,7 +17,7 @@ function Register() {
 
     useEffect(() => {
         if(conectado) {
-            history.push("/");
+            history.push("/login");
         }
     });
 
@@ -48,7 +48,10 @@ function Register() {
 
         dispatch(registroUsuario({userName, password, nombre, correo}))
         .then(response=>{
-            dispatch(loginUsuario({userName, password}));
+            
+            window.location.href="/login";
+            
+           // dispatch(loginUsuario({userName, password}));
         })
         .catch(err=>{
             // setErrores({ registroError: err.response.data.message });

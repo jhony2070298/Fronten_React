@@ -1,5 +1,5 @@
 import axios from 'axios'
-import { LOGIN_ENDPOINT } from './helpers/endPoint'
+import { LOGIN_ENDPOINT, REGISTRO_ENDPOINT } from './helpers/endPoint'
 import jwt_decode from 'jwt-decode'
 import { SET_USUARIO_ACTUAL } from '../reducers/tipos'
 import { setAutenticationToken } from './helpers/setAutenticationToken'
