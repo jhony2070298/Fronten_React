@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { Button, Form } from 'react-bootstrap'
-import { NavLink } from 'react-router-dom'
 
 
 function LoginForm({errores,enviarCallback}) {
@@ -44,7 +43,7 @@ function LoginForm({errores,enviarCallback}) {
                 </Form.Control.Feedback>
             </Form.Group>
             
-            <Button className="mb-3 mx-auto d-block" variant="primary" type="submit" as={NavLink} to={'/formulario'}>
+            <Button className="mb-3 mx-auto d-block" variant="primary" type="submit">
                 Iniciar sesión
             </Button>     
         </Form>

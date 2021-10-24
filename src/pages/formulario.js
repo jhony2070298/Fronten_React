@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, Col, Container, Row } from 'react-bootstrap'
+import { Container} from 'react-bootstrap'
 import { FormularioForm } from '../components/FormularioForm'
 
 function Formulario() {

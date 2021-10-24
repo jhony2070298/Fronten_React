@@ -11,14 +11,14 @@ import { loginUsuario } from '../connection/autenticacionAcciones';
 
 function Login() {
 
-    const [errores, setErrores] = useState({})
-    const dispatch = useDispatch()
-    const conectado = useSelector(state=>state.auth.conectado)
-    const history = useHistory()
+    const [errores, setErrores] = useState({});
+    const dispatch = useDispatch();
+    const conectado = useSelector(state=>state.auth.conectado);
+    const history = useHistory();
 
     useEffect(()=>{
         if(conectado){
-            history.push("/")
+            history.push("/formulario")
         }
     })
 
