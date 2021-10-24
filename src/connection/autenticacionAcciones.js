@@ -1,6 +1,6 @@
 import axios from 'axios'
 import React from 'react'
-import { LOGIN_ENDPOINT } from './helpers/endPoint'
+import { LOGIN_ENDPOINT, REGISTRO_ENDPOINT } from './helpers/endPoint'
 import jwt_decode from 'jwt-decode'
 import { SET_USUARIO_ACTUAL } from '../reducers/tipos'
 import { setAutenticationToken } from './helpers/setAutenticationToken'
@@ -63,4 +63,17 @@ export const cerrarSesion = () => dispatch =>{
         usuario:{},
         conectado:false
     }))
+}
+
+export const registroUsuario = (datosUsuario) => dispatch =>{
+
+    return new Promise((resolve,reject) =>{
+        axios.post(REGISTRO_ENDPOINT,datosUsuario,{
+            headers: {'Accept': 'application/json','Content-Type': 'application/json'}
+        }).then(response =>{
+            resolve(response);
+        }).catch(err => {
+            reject(err);
+        })
+    })
 }

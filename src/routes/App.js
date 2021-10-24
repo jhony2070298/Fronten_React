@@ -3,12 +3,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navegacion } from '../layouts/Navegacion';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { Container, Image } from 'react-bootstrap';
-import { Register } from '../pages/register';
+import { Register } from '../pages/Register';
 import { Login } from '../pages/login';
 import { Formulario } from '../pages/formulario';
-import { Usuario } from '../pages/usuario';
+import { Usuario } from '../pages/Usuario';
 import { Administrador } from '../pages/administrador';
-import { Editar } from '../pages/editar';
+import { Editar } from '../pages/Editar';
 import { Inicio } from '../pages/Inicio';
 import LogoIH from '../img/logo_ih.jpg'
 import linguaskill from '../img/Linguaskill_from_480.jpeg'

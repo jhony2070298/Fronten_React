@@ -1,8 +1,8 @@
 import React from 'react'
-import { Button, Form, Image} from 'react-bootstrap'
+import { Button, Image} from 'react-bootstrap'
 import { NavLink } from 'react-router-dom';
 import Subir from '../img/subir_archivos.jpg'
-import prueba from '../img/subir_archivos.jpg'
+
 
 
 function FormularioForm() {
@@ -92,7 +92,7 @@ function FormularioForm() {
                   <div className="col-5"><label htmlFor="archivo_foto" className="txt_lbl">Cargar Foto del Candidato</label></div>
                   <div className="col-5 box-img py-2" onclick="uploadfile3();">
                     <Image className="mx-auto d-block" src={Subir} fluid/>
-                    <div className="txt-file pt-3">Click Aqui Para Caragar Archivos</div>
+                    <div className="txt-file pt-3">Click Aqui Para Cargar Archivos</div>
                   </div>
                   <input type="file" name="archivo_foto" id="archivo_foto" className="d-none" />
                 </div>
