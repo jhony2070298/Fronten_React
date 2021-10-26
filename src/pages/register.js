@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Link, useHistory } from 'react-router-dom'
 import validator from 'validator'
 import { isObjetoVacio } from '../connection/helpers/isObjetoVacio';
-import { registroUsuario, loginUsuario } from '../connection/autenticacionAcciones';
+import { registroUsuario } from '../connection/autenticacionAcciones';
 
 
 function Register() {
