@@ -41,7 +41,7 @@ function App() {
               <RutaPrivada exact path="/formulario" component={Formulario}></RutaPrivada>
               <RutaPrivada exact path="/usuario" component={Usuario}></RutaPrivada>
               <RutaPrivada exact path="/administrador" component={Administrador}></RutaPrivada>
-              <RutaPrivada exact path="/editar" component={Editar}></RutaPrivada>
+              <RutaPrivada exact path="/Editar" component={Editar}></RutaPrivada>
             </Switch>
           </Container>
       </BrowserRouter>
