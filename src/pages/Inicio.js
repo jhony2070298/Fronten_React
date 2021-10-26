@@ -29,7 +29,7 @@ function Inicio() {
                             </div>
                         </div>
                     </Col>
-                    <Col classname='mt-3' class="d-flex align-items-start flex-column bd-highlight mb-2 col-md-4">
+                    <Col className='mt-3' class="d-flex align-items-start flex-column bd-highlight mb-2 col-md-4">
                         <div className="mi-lst">
                             <div className="lst-informacion">                          
                                 <ul className="mi-lista">
