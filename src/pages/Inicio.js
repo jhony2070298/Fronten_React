@@ -12,15 +12,12 @@ function Inicio() {
         <Container className="mt-3">
             <Row>
                 <div className="mi-informacion">
-                   <h6>
-                        <p > 
-                            <Image src={Email} alt="Email" width="20" height="20" fluid/>
-                            info@ihbogota.com
-                            <Image src={Phone} alt="Phone" width="19" height="19" fluid/>
-                            +57 1 744 1993
-                        </p>
-                    </h6> 
-                      
+                    <h3><p>
+                        <Image src={Email} alt="Email" width="20" height="20" fluid/>
+                        info@ihbogota.com
+                        <Image src={Phone} alt="Phone" width="19" height="19" fluid/>
+                        +57 1 744 1993
+                    </p></h3>
                 </div>
                 <h2 className="titulo-index">¡Certifícate internacionalmente con Cambridge sin salir de casa!</h2>
                 <Row className="d-md-flex align justify-content-center info-index">
@@ -32,7 +29,7 @@ function Inicio() {
                             </div>
                         </div>
                     </Col>
-                    <Col  className="d-flex align-items-start flex-column bd-highlight mb-2 col-md-4">
+                    <Col className="mt-3 d-flex align-items-start flex-column bd-highlight mb-2 col-md-4">
                         <div className="mi-lst">
                             <div className="lst-informacion">                          
                                 <ul className="mi-lista">
