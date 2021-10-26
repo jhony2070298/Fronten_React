@@ -10,7 +10,7 @@ function RutaPrivada({component:Componente,...restPro}) {
         <Route
         {...restPro}
         render = {
-            (propiedades) => conectado == true ? <Componente {...propiedades}/> : <Redirect to="/login"/>
+            (propiedades) => conectado === true ? <Componente {...propiedades}/> : <Redirect to="/login"/>
         }
         />
     )
